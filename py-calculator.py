@@ -6,26 +6,26 @@ def welcome():
 
 def calculator():
     num1 = int(input('First number '))
-    operation = input('Select operation (+, -, *, % ) ')
+    operator = input('Select operator (+, -, *, % ) ')
 
-    if operation == '+':
+    if operator == '+':
         num2 = int(input('Second number '))
         print('{} + {} ='.format(num1, num2), num1 + num2)
 
-    elif operation == '-':
+    elif operator == '-':
           num2 = int(input('Second number '))
           print('{} - {} ='.format(num1, num2), num1 - num2)
     
-    elif operation == '*':
+    elif operator == '*':
           num2 = int(input('Second number '))
           print('{} * {} ='.format(num1, num2), num1 * num2)
 
-    elif operation == '*':
+    elif operator == '*':
           num2 = int(input('Second number '))
           print('{} % {} ='.format(num1, num2), num1 % num2)
 
     else:
-        print('Invalid operation')
+        print('Invalid operator')
     again()
 
 def again():
